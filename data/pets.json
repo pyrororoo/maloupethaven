@@ -99,17 +99,17 @@
   },
 
   { 
-    "name": "Fat Man", 
+    "name": "Thom Yorke", 
     "type": "Cat", 
     "age" : "4 months old",
     "age_class": "Young",
     "size": "Small",
     "sex": "Male",
-    "image": "fatman.jpg", 
-    "short_desc": "Nuclear personality.",
+    "image": "thomyorke.jpg", 
+    "short_desc": "Hates alarms and surprises.",
     "health_status": "Healthy",
-    "status": "Available",
-    "featured": "Yes"
+    "status": "Pending App.",
+    "featured": "No"
   },
 
   { 
@@ -123,7 +123,7 @@
     "short_desc": "A very dog.",
     "health_status": "Bad athritis",
     "status": "Available",
-    "featured": "Yes"
+    "featured": "No"
   }
 
 
