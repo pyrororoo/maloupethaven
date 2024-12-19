@@ -23,6 +23,9 @@
 
 }
 
+
+/* image sizes */
+
 .small-img {
   width: 150px;
   height: auto;
@@ -33,6 +36,19 @@
   height: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .large-img {
+    width: 20%;
+    height: auto;
+  }
+}
+
+.small-img {
+  width: 100px;
+}
+
+/* remove default styles */
+
 .rmv-link-design {
   text-decoration: none;
 }
@@ -40,6 +56,9 @@
 .rmv-bullets {
   list-style-type: none;
 }
+
+
+/* font families */
 
 .header-font {
   font-family: "Climate Crisis", "Impact", sans-serif;
@@ -53,6 +72,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+/* text colors */
+
 .clr-green {
   color: var(--green);
 }
@@ -64,6 +86,10 @@
 .clr-yellow {
   color: var(--light-yellow);
 }
+
+
+
+/* text sizes */
 
 .txt-24 {
   font-size: 24px;
@@ -77,19 +103,40 @@
   font-size: 48px;
 }
 
-.btn {
-  text-decoration: none;
-  padding: 10px 48px;
-  border-radius: 50px;
+@media screen and (max-width: 480px) {
+  .txt-48 {
+    font-size: var(--large);
+  }
+
+  .txt-32 {
+    font-size: var(--medium);
+  }
+
+  .txt-24 {
+    font-size: var(--small);
+  }
 }
 
+
+
+/* backgrounds */
+
 .green-bg {
-  /* color: var(--beige); */
   background: var(--green);
 }
 
 .light-yellow-bg {
   background: var(--light-yellow);
+}
+
+
+
+/* buttons */
+
+.btn {
+  text-decoration: none;
+  padding: 10px 48px;
+  border-radius: 50px;
 }
 
 .small-btn {
@@ -121,6 +168,25 @@
 .reg-link {
   color: var(--link);
 }
+
+
+@media screen and (max-width: 480px) {
+
+  .primary-btn {
+    font-size: var(--small);
+  }
+
+  .secondary-btn {
+    font-size: var(--small);
+  }
+
+  .orange-btn {
+    font-size: var(--small);
+  }
+}
+
+
+
 
 /* interaction actions */
 
@@ -172,6 +238,7 @@
 }
 
 
+
 /* section specific */
 
 body {
@@ -184,6 +251,7 @@ body {
 
 
 /* navigation */
+
 nav {
 
   background: var(--green);
@@ -193,7 +261,8 @@ nav {
 
     display: flex;
     justify-content: space-between;
-    max-width: 96%;
+    /* max-width: 96%; */
+    padding: 0 20px ;
     margin: auto;
     /* border: red solid thin; */
     
@@ -203,32 +272,39 @@ nav {
 
       img {
         display: block;
+        min-width: 150px;
         /* border: red solid thin; */
       }
+
     }
 
-
-    div {
-      flex: 3;
-    }
 
     ul {
 
-      flex: 1;
       /* border: red solid thin; */
       padding: 0;
       display: flex;
-      justify-content: space-between;
-      gap: 5%;
+      justify-content: right;
+      gap: 20px;
 
+      border: red solid thin;
       li {
-        white-space: nowrap;
+        /* white-space: nowrap; */
+        display: block;
       }
 
     }
 
   }
+
+  @media screen and (max-width:480px) {
+    div a img {
+      min-width: 50px;
+    }
+  }
+
 }
+
 
 
 /* footer */
