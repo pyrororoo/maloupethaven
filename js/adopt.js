@@ -37,6 +37,7 @@ function displayPets(filteredPets) {
         <h3 class="txt-24 secondary-font clr-yellow green-bg">${pet.name}</h3>
         <p class="status txt-18">Status: ${pet.status}</p>
         <p class="txt-18">Type: ${pet.type}</p>
+        <p class="txt-18">Sex: ${pet.sex}</p>
         <p class="txt-18">Age: ${pet.age}</p>
         <p class="txt-18">Size: ${pet.size || "N/A"}</p>
         <p class="txt-18">Health: ${pet.health_status}</p>
@@ -63,6 +64,7 @@ function displayPets(filteredPets) {
         <h3 class="txt-24 secondary-font clr-yellow green-bg">${pet.name}</h3>
         <p class="status txt-18" style="color:var(--red)">Status: ${pet.status}</p>
         <p class="txt-18">Type: ${pet.type}</p>
+        <p class="txt-18">Sex: ${pet.sex}</p>
         <p class="txt-18">Age: ${pet.age}</p>
         <p class="txt-18">Size: ${pet.size || "N/A"}</p>
         <p class="txt-18">Health: ${pet.health_status}</p>
