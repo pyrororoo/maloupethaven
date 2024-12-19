@@ -89,10 +89,13 @@
 }
 
 .green-bg {
-  color: var(--beige);
+  /* color: var(--beige); */
   background: var(--green);
 }
 
+.light-yellow-bg {
+  background: var(--light-yellow);
+}
 
 .primary-btn {
   font-family: var(--secondary);
@@ -138,6 +141,9 @@
 
 }
 
+
+
+
 /* section specific */
 
 body {
@@ -146,6 +152,8 @@ body {
   background: var(--beige);
 
 }
+
+
 
 /* navigation */
 nav {
@@ -188,172 +196,7 @@ nav {
   }
 }
 
-/* index */
 
 
-/* headline */
-
-.headline {
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border: solid red thin;
-  
-  img {
-    display: block;
-    border: solid red thin;
-    min-width: 400px;
-  }
-
-  h1 {
-    border: solid red thin;
-  }
-
-  .btn-group {
-
-    min-width: 26%;
-    display: flex;
-    justify-content: space-between;
-    border: solid red thin;
-
-  }
-
-}
 
 
-/* about us */
-
-#index-about-us {
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .left {
-    flex: 1;
-    background: var(--light-yellow);
-    padding: 50px 5%;
-    min-width: 400px;
-  }
-
-  .right {
-    flex: 1;
-    background: var(--green);
-    padding: 50px 5%;
-    min-width: 400px;
-
-    p {
-      margin-bottom: 10%;
-    }
-
-    .btn-group {
-      
-      .btn {
-        margin-right: 10px;
-      }
-      
-    }
-  }
-  
-}
-
-/* featured pets */
-
-#featured-pets {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px 0;
-
-  #pets-container {
-
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    white-space: nowrap;
-
-    div.card {
-
-      background: var(--light-yellow);
-      border-radius: 20px;
-
-      .card-img {
-        max-height: 250px;
-        max-width: 250px;
-        border-radius: 15px 15px 0 0;
-        object-fit: cover;
-      }
-
-      .card-content {
-
-        /* border: red solid thin; */
-        padding: 10px 20px 20px 20px;
-
-        p {
-          margin: 0;
-          padding: 0;
-          color: var(--green);
-          margin-bottom: 10px;
-        }
-
-        span.information {
-          border: solid 1px var(--green);
-          font-size: var(--small);
-          padding: 5px 10px;
-          border-radius: 50px;
-          font-family: var(--body);
-          font-weight: 400;
-          font-size: var(--xs);
-        }
-
-        span.information.status {
-          font-weight: bold;
-        }
-
-        p.information {
-          margin-bottom: 40px;
-        }
-
-        p.secondary-font {
-          font-size: var(--sm-med);
-        }
-
-        h3.pet-name {
-
-          padding: 0;
-          margin: 10px 0 5px 0;
-          color: var(--green);
-        }
-
-        .btn-pane {
-          /* border: red solid thin; */
-          display: flex;
-          justify-content: right;
-
-        }
-
-      }
-
-    }
-
-  }
-
-  #pets-container::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  #pets-container::-webkit-scrollbar-thumb {
-    background: var(--light-yellow);
-    border-radius: 4px;
-  }
-
-  #pets-container::-webkit-scrollbar-track {
-    background: var(--orange);
-  }
-
-}

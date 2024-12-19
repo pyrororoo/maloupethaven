@@ -17,7 +17,7 @@ fetch('data/pets.json')
             <p class="body-font information"> <span class="information status">${pet.status}</span> <span class="information">${pet.age}</span> </p>
 
             <div class="btn-pane">
-              <a class="btn small-btn green-bg">Adopt Me!</a>
+              <a class="btn small-btn green-bg clr-yellow">Adopt Me!</a>
             </div>
           </div>
 
