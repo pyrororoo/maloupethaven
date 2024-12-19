@@ -7,16 +7,16 @@
   align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  border: solid red thin;
+  /* border: solid red thin; */
   
   img {
     display: block;
-    border: solid red thin;
+    /* border: solid red thin; */
     min-width: 400px;
   }
 
   h1 {
-    border: solid red thin;
+    /* border: solid red thin; */
     text-align: center;
   }
 
@@ -25,11 +25,13 @@
     min-width: 26%;
     display: flex;
     justify-content: space-between;
-    border: solid red thin;
+    /* border: solid red thin; */
 
   }
 
 }
+
+
 
 
 /* about us */
@@ -181,3 +183,54 @@
 
 }
 
+
+@media (max-width:480px) {
+  
+  
+  .headline {
+
+    img {
+      min-width: 300px;
+    }  
+  
+    h1 {
+      line-height: 30px;
+    }
+
+    .btn-group {
+      justify-content: center;
+      gap: 10px;
+    }
+
+  }
+
+  #index-about-us {
+    
+    .container {
+      flex-direction: row ;
+
+      .left {
+        min-width: 300px;
+      }
+  
+      .right {
+        min-width: 300px;
+      }
+      
+    }
+    
+
+  }
+
+  #featured-pets {
+
+    #pets-container {
+      margin-left: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+}

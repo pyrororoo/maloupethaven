@@ -91,6 +91,18 @@
 
 /* text sizes */
 
+.txt-12 {
+  font-size: var(--xs);
+}
+
+.txt-16 {
+  font-size: var(--small);
+}
+
+.txt-18 {
+  font-size: var(--sm-med);
+}
+
 .txt-24 {
   font-size: 24px;
 }
@@ -113,7 +125,15 @@
   }
 
   .txt-24 {
+    font-size: var(--sm-med);
+  }
+
+  .txt-18 {
     font-size: var(--small);
+  }
+
+  .txt-16 {
+    font-size: var(--xs);
   }
 }
 
