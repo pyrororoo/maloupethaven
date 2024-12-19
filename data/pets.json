@@ -1,0 +1,82 @@
+[
+  { 
+    "name": "Booger", 
+    "type": "Dog", 
+    "age" : "3 years old",
+    "sex": "Female",
+    "image": "booger.jpg", 
+    "short_desc": "The bestest girl.", 
+    "status": "Available",
+    "featured": "Yes"
+  },
+
+  { 
+    "name": "Goober", 
+    "type": "Cat", 
+    "age" : "2 years old",
+    "sex": "Female",
+    "image": "goober.jpg", 
+    "short_desc": "Loves cuddles.", 
+    "status": "Available",
+    "featured": "Yes"
+    
+  },
+
+  { 
+    "name": "Mr. Guy", 
+    "type": "Cat", 
+    "age" : "1 year old",
+    "sex": "Male",
+    "image": "mrguy.jpg", 
+    "short_desc": "Menace.",
+    "status": "Available",
+    "featured": "No"
+  },
+
+  { 
+    "name": "Boss Man", 
+    "type": "Dog", 
+    "age" : "8 months old",
+    "sex": "Male",
+    "image": "bossman.jpg", 
+    "short_desc": "A bit odd but very affectionate.",
+    "status": "Available",
+    "featured": "No"
+  },
+
+  { 
+    "name": "Cyanide Posoning", 
+    "type": "Dog", 
+    "age" : "1 year old",
+    "sex": "Female",
+    "image": "cyanidepoisoning.jpg", 
+    "short_desc": "Absolute sweetheart",
+    "status": "Available",
+    "featured": "No"
+  },
+
+  { 
+    "name": "Fat Man", 
+    "type": "Cat", 
+    "age" : "4 months old",
+    "sex": "Male",
+    "image": "fatman.jpg", 
+    "short_desc": "Nuclear personality.",
+    "status": "Available",
+    "featured": "Yes"
+  },
+
+  {
+    "name": "Mario and Luigi",
+    "type": "Cat",
+    "age" : "4 years old",
+    "sex": "Male",
+    "image": "marioandluigi.jpg",
+    "short_desc": "Bonded pair.",
+    "status": "Available",
+    "featured": "No"
+  }
+
+
+
+]
