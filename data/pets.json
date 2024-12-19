@@ -7,7 +7,7 @@
     "size": "Large",
     "sex": "Female",
     "image": "booger.jpg", 
-    "short_desc": "The bestest girl.",
+    "short_desc": "Her breath stank.",
     "health_status": "Healthy", 
     "status": "Available",
     "featured": "Yes"
@@ -21,7 +21,7 @@
     "size": "Medium",
     "sex": "Female",
     "image": "goober.jpg", 
-    "short_desc": "Loves cuddles.", 
+    "short_desc": "Likes to stare (very rude).", 
     "health_status": "Healthy",
     "status": "Pending App.",
     "featured": "Yes"
@@ -50,7 +50,7 @@
     "size": "Medium",
     "sex": "Male",
     "image": "bossman.jpg", 
-    "short_desc": "A bit odd but very affectionate.",
+    "short_desc": "Afraid of everything.",
     "health_status": "Healthy",
     "status": "Available",
     "featured": "No"
@@ -64,8 +64,8 @@
     "size": "Small",
     "sex": "Female",
     "image": "cyanidepoisoning.jpg", 
-    "short_desc": "Absolute sweetheart",
-    "health_status": "Healthy with a slight limp.",
+    "short_desc": "Named after late owner. RIP.",
+    "health_status": "Slight limp",
     "status": "Available",
     "featured": "No"
   },
@@ -92,10 +92,38 @@
     "size": "Medium",
     "sex": "Male",
     "image": "marioandluigi.jpg",
-    "short_desc": "Bonded pair.",
+    "short_desc": "Bonded pair. Cannot plumb.",
     "health_status": "Healthy",
     "status": "Available",
     "featured": "No"
+  },
+
+  { 
+    "name": "Fat Man", 
+    "type": "Cat", 
+    "age" : "4 months old",
+    "age_class": "Young",
+    "size": "Small",
+    "sex": "Male",
+    "image": "fatman.jpg", 
+    "short_desc": "Nuclear personality.",
+    "health_status": "Healthy",
+    "status": "Available",
+    "featured": "Yes"
+  },
+
+  { 
+    "name": "Blackie", 
+    "type": "Dog", 
+    "age" : "13 years old",
+    "age_class": "Senior",
+    "size": "Large",
+    "sex": "Male",
+    "image": "blackie.jpg", 
+    "short_desc": "A very dog.",
+    "health_status": "Bad athritis",
+    "status": "Available",
+    "featured": "Yes"
   }
 
 
