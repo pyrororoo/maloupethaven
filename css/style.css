@@ -169,10 +169,16 @@ nav {
     margin: auto;
     /* border: red solid thin; */
     
-    img {
-      display: block;
+    a {
       /* border: red solid thin; */
+      display: flex;
+
+      img {
+        display: block;
+        /* border: red solid thin; */
+      }
     }
+
 
     div {
       flex: 3;
