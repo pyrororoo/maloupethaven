@@ -1,5 +1,4 @@
-
-fetch('data/pets.json')
+fetch('./data/pets.json')
   .then((response) => response.json())
   .then((pets) => {
     const petsContainer = document.getElementById('pets-container');
@@ -28,3 +27,6 @@ fetch('data/pets.json')
     });
   })
   .catch((error) => console.error('Error loading pets:', error));
+
+
+

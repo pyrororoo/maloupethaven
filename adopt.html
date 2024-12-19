@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Furry Friend!</title>
+</head>
+<body>
+  
+  <div id="filter-section">
+    <label for="type">Type:</label>
+    <select id="filter-type">
+      <option value="all">All</option>
+      <option value="Dog">Dog</option>
+      <option value="Cat">Cat</option>
+    </select>
+  
+    <label for="age">Age:</label>
+    <select id="filter-age">
+      <option value="all">All</option>
+      <option value="Young">Young</option>
+      <option value="Adult">Adult</option>
+      <option value="Senior">Senior</option>
+    </select>
+  
+    <label for="size">Size:</label>
+    <select id="filter-size">
+      <option value="all">All</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+  
+    <label for="availability">Availability:</label>
+    <select id="filter-availability">
+      <option value="all">All</option>
+      <option value="Available">Available</option>
+      <option value="Pending Application">Pending Application</option>
+    </select>
+  
+    <button id="filter-button">Apply Filters</button>
+  </div>
+  
+  <div id="pet-list"></div>
+  
+
+  <script src="./js/adopt.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Form</title>
+</head>
+<body>
+  <h1>Adoption Form</h1>
+  <form>
+    <label for="pet-name">Pet Name:</label>
+    <input type="text" id="pet-name" name="pet-name" readonly>
+    
+    <!-- Other fields like name, contact info, etc. -->
+    <label for="applicant-name">Your Name:</label>
+    <input type="text" id="applicant-name" name="applicant-name" required>
+    
+    <label for="contact-info">Contact Information:</label>
+    <input type="text" id="contact-info" name="contact-info" required>
+    
+    <button type="submit" onclick="redirectToThankYouPage('${pet.name}')">Submit Application</button>
+  </form>
+
+  <script>
+    // retrieve pet name from query parameter and display it
+    const params = new URLSearchParams(window.location.search);
+    const petName = params.get("pet");
+    if (petName) {
+      document.getElementById("pet-name").value = petName;
+    }
+
+    function redirectToThankYouPage(petName) { //recycled code to redirect to thank u page after submission
+      const url = `./forms/adoption-thank-you.html?pet=${encodeURIComponent(petName)}`;
+      window.location.href = url;
+    }
+
+  </script>
+</body>
+</html>
