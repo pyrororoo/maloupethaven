@@ -1,0 +1,91 @@
+#adopt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#filter-section {
+  background: var(--light-yellow);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  gap: 15px; 
+  margin-bottom: 20px;
+}
+
+#filter-section label {
+  font-family: var(--secondary);
+  font-size: var(--small);
+  color: var(--green);
+  margin-right: 5px; /* Adds space between label and select */
+}
+
+#filter-section select {
+  font-size: var(--small);
+}
+
+#pet-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0 100px 0;
+  gap: 30px;
+}
+
+.card {
+  background: var(--light-yellow);
+  max-width: 250px;
+  border-radius: 25px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--inner-glow);
+  transition: all 0.05s ease-in;
+}
+
+.card-img {
+  object-fit: cover;
+  max-height: 250px;
+  max-width: 250px;
+  border-radius: 25px 25px 0 0;
+}
+
+.card .content h3 {
+  text-align: center;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.card .content p {
+  font-family: var(--secondary);
+  margin: 0 16px;
+  padding: 0;
+}
+
+p.description {
+  font-style: italic;
+  color: var(--green);
+}
+
+.btn-pane {
+  display: flex;
+  justify-content: right;
+  padding: 20px 10px 10px 10px;
+}
+
+@media (max-width:780px) {
+  #pet-list {
+    justify-content: flex-start;
+    gap: 0;
+    flex-wrap: nowrap;
+    width: 100%; /* Full width for small screens */
+    overflow-x: auto; /* Allow horizontal scrolling */
+
+    .card {
+      margin-left: 30px;
+    }
+  }
+}

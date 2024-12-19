@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/logo/favicon.ico" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/volunteer.css">
+  <link rel="stylesheet" href="./css/modal-form.css">
+</head>
+<body>
+  
+  <nav>
+
+    <div>
+      <a href="./index.html"><img src="./images/logo/logo-with-name.svg" alt="" class="small-img" draggable="false"></a>
+      
+      <div></div>
+
+      <ul class="rmv-bullets">
+        <li><a href="./adopt.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Adopt</a></li>
+        <li><a href="./donate.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Donate</a></li>
+        <li><a href="./volunteer.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Volunteer</a></li>
+        <li><a href="./about-us.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div id="volunteer">
+
+
+    <h1 class="txt-48 header-font clr-green center-txt">Events and Volunteering</h1>
+
+    <div id="headline-event" class="light-yellow-bg">
+
+    </div>
+
+    <div id="events">
+
+    </div>
+
+    
+  </div>
+
+
+  <!-- form modal -->
+  <div id="eventApplicationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal" onclick="closeModal()">&times;</span>
+      <h2 class="secondary-font txt-32 clr-green">Application Form</h2>
+      
+    <form id="event-application-form" >
+      <label for="applicant-name" class="body-font">Full Name</label>
+      <input type="text" id="applicant-name" name="name" placeholder="Input Full Name" required>
+      
+      <label for="applicant-email" class="body-font">Email Address</label>
+      <input type="email" id="applicant-email" name="email" placeholder="example@email.com" required>
+      
+      <label for="applicant-phone" class="body-font">Phone Number</label>
+      <input type="tel" id="applicant-phone" name="phone" placeholder="123-456-7890" required>
+      
+      <button onclick="closeModal()" class="btn green-bg secondary-font txt-18 clr-yellow">Submit Application</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="light-yellow-bg">
+    
+    <div class="upper green-bg">
+      <img src="./images/logo/logo.svg" alt="" draggable="false" class="small-img">
+
+      <ul class="rmv-bullets">
+        <li><a href="./adopt.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Adopt</a></li>
+        <li><a href="./donate.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Donate</a></li>
+        <li><a href="./volunteer.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Volunteer</a></li>
+        <li><a href="./about-us.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">About Us</a></li>
+      </ul>
+
+    </div>
+
+    <div class="credits">
+      <p class="secondary-font">Website by Jazmin Erika M. Nator</p>
+    </div>
+
+  </footer>
+
+  <script src="./js/events.js"></script>
+</body>
+</html>

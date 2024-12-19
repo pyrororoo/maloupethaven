@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate to Malou Pet Haven</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/logo/favicon.ico" />
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/modal-form.css">
+</head>
+<body>
+  
+   <!-- navbar -->
+
+   <nav>
+
+    <div>
+      <a href="./index.html"><img src="./images/logo/logo-with-name.svg" alt="" class="small-img" draggable="false"></a>
+      
+      <div></div>
+
+      <ul class="rmv-bullets">
+        <li><a href="./adopt.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Adopt</a></li>
+        <li><a href="./donate.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Donate</a></li>
+        <li><a href="./volunteer.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Volunteer</a></li>
+        <li><a href="./about-us.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div id="donate" style="margin-bottom: 100px;">
+
+    <div class="container">
+      <h1 style="margin-top: 100px;" class="txt-48 header-font">Make a Donation</h1>
+
+      <p class="center-txt secondary-font clr-orange txt-18">Give us your money pretty pretty pretty please. Kidding, any amount will help!</p>
+      <form id="donation-form" class="form-container">
+        <label for="donor-name">Full Name</label>
+        <input type="text" id="donor-name" name="donor-name" placeholder="Your Full Name" required>
+    
+        <label for="donor-email">Email</label>
+        <input type="email" id="donor-email" name="donor-email" placeholder="Your Email Address" required>
+    
+        <label for="donation-amount">Donation Amount</label>
+        <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter Amount (PHP)" required>
+    
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="gcash">GCash</option>
+          <option value="paymaya">PayMaya</option>
+          <option value="bank-transfer">Bank Transfer</option>
+        </select>
+    
+        <button class="btn secondary-btn" style="margin-top: 30px;" id="donateNow" onclick="openModal()">Donate Now</button>
+      </form>
+    </div>
+    
+    <!-- Confirmation Modal -->
+    <div id="donationModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2 class="secondary-font txt-32 clr-orange">Thank You!</h2>
+        <p class="body-font txt-14" style="margin-bottom: 50px;">Your donation has been received successfully.</p>
+        <a href="./index.html" class="btn secondary-font txt-18 clr-beige orange-bg">Back Home</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+  <footer class="light-yellow-bg">
+    
+    <div class="upper green-bg">
+      <img src="./images/logo/logo.svg" alt="" draggable="false" class="small-img">
+
+      <ul class="rmv-bullets">
+        <li><a href="./adopt.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Adopt</a></li>
+        <li><a href="./donate.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Donate</a></li>
+        <li><a href="./volunteer.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Volunteer</a></li>
+        <li><a href="./about-us.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">About Us</a></li>
+      </ul>
+
+    </div>
+
+    <div class="credits">
+      <p class="secondary-font">Website by Jazmin Erika M. Nator</p>
+    </div>
+
+  </footer>
+
+  <script>
+
+    const form = document.getElementById("donation-form");
+    const modal = document.getElementById("donationModal");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      modal.style.display = "flex"; 
+    });
+
+    function closeModal() {
+      modal.style.display = "none"; 
+    }
+
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none"; // end my suffering
+      }
+    };
+
+  </script>
+
+</body>
+</html>

@@ -3,44 +3,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopt a Furry Friend!</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/logo/favicon.ico" />
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/adopt.css">
 </head>
 <body>
   
-  <div id="filter-section">
-    <label for="type">Type:</label>
-    <select id="filter-type">
-      <option value="all">All</option>
-      <option value="Dog">Dog</option>
-      <option value="Cat">Cat</option>
-    </select>
   
-    <label for="age">Age:</label>
-    <select id="filter-age">
-      <option value="all">All</option>
-      <option value="Young">Young</option>
-      <option value="Adult">Adult</option>
-      <option value="Senior">Senior</option>
-    </select>
+  <nav>
+
+    <div>
+      <a href="./index.html"><img src="./images/logo/logo-with-name.svg" alt="" class="small-img" draggable="false"></a>
+      
+      <div></div>
+
+      <ul class="rmv-bullets">
+        <li><a href="./adopt.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Adopt</a></li>
+        <li><a href="./donate.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Donate</a></li>
+        <li><a href="./volunteer.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Volunteer</a></li>
+        <li><a href="./about-us.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
   
-    <label for="size">Size:</label>
-    <select id="filter-size">
-      <option value="all">All</option>
-      <option value="Small">Small</option>
-      <option value="Medium">Medium</option>
-      <option value="Large">Large</option>
-    </select>
-  
-    <label for="availability">Availability:</label>
-    <select id="filter-availability">
-      <option value="all">All</option>
-      <option value="Available">Available</option>
-      <option value="Pending Application">Pending Application</option>
-    </select>
-  
-    <button id="filter-button">Apply Filters</button>
+  <div id="adopt">
+
+    <div id="filter-section">
+      <label for="type">Type:</label>
+      <select id="filter-type">
+        <option value="all">All</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+      </select>
+    
+      <label for="age">Age:</label>
+      <select id="filter-age">
+        <option value="all">All</option>
+        <option value="Young">Young</option>
+        <option value="Adult">Adult</option>
+        <option value="Senior">Senior</option>
+      </select>
+    
+      <label for="size">Size:</label>
+      <select id="filter-size">
+        <option value="all">All</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+    
+      <label for="availability">Availability:</label>
+      <select id="filter-availability">
+        <option value="all">All</option>
+        <option value="Available">Available</option>
+        <option value="Pending App.">Pending Application</option>
+      </select>
+    
+      <button id="filter-button" class="btn small-btn green-bg clr-yellow">Apply Filters</button>
+    </div>
+    
+    <div id="pet-list"></div>
+
   </div>
   
-  <div id="pet-list"></div>
+  <!-- footer -->
+  <footer class="light-yellow-bg">
+    
+    <div class="upper green-bg">
+      <img src="./images/logo/logo.svg" alt="" draggable="false" class="small-img">
+
+      <ul class="rmv-bullets">
+        <li><a href="./adopt.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Adopt</a></li>
+        <li><a href="./donate.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Donate</a></li>
+        <li><a href="./volunteer.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Volunteer</a></li>
+        <li><a href="./about-us.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">About Us</a></li>
+      </ul>
+
+    </div>
+
+    <div class="credits">
+      <p class="secondary-font">Website by Jazmin Erika M. Nator</p>
+    </div>
+
+  </footer>
+
   
 
   <script src="./js/adopt.js"></script>

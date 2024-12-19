@@ -92,7 +92,7 @@
 
       background: var(--light-yellow);
       border-radius: 20px;
-
+      
       .card-img {
         max-height: 250px;
         max-width: 250px;

@@ -1,0 +1,52 @@
+[
+
+  {
+    "name": "Join our team!",
+    "description": "Volunteer as an employee of Malou Pet Haven and help care for our furry family.",
+    "venue": "Malou Pet Haven, Shelter Pavilion",
+    "time": "Apply anytime!",
+    "button": "Volunteer",
+    "image": "volunteer.png",
+    "headline": "Yes"
+  },
+
+  {
+    "name": "Adoption Fair",
+    "description": "Meet adorable pets ready to find their forever homes. Chat with staff about adoption processes and pet care.",
+    "venue": "Community Park, Shelter Pavilion",
+    "time": "10:00 AM - 4:00 PM",
+    "button": "I'll be there",
+    "image": "adoptionfair.png",
+    "headline": "No"
+  },
+
+  {
+    "name": "Pet Vaccination Drive",
+    "description": "Provide low-cost or free vaccinations for pets. Open to both shelter and community pets.",
+    "venue": "Community Park, Shelter Pavilion",
+    "time": "8:00 AM - 3:00 PM",
+    "button": "I'll be there",
+    "image": "vaccinationdrive.png",
+    "headline": "No"
+  },
+
+  {
+    "name": "Volunteer Training Workshop",
+    "description": "Hands-on training for volunteers to learn how to care for pets and assist at the shelter.",
+    "venue": "Malou Shelter Main Hall",
+    "time": "9:00 AM - 12:00 PM",
+    "button": "Volunteer",
+    "image": "training.png",
+    "headline": "No"
+  },
+
+  {
+    "name": "Paws and Claws Fun Run",
+    "description": "A charity fun run for pet owners and their furry friends, with proceeds benefiting the shelter.",
+    "venue": "Riverside Trail",
+    "time": "7:00 AM - 11:00 AM",
+    "button": "I'll be there",
+    "image": "funrun.png",
+    "headline": "No"
+  }
+]

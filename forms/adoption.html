@@ -4,36 +4,186 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adoption Form</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/logo/favicon.ico" />
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/form.css">
+
 </head>
 <body>
-  <h1>Adoption Form</h1>
-  <form>
-    <label for="pet-name">Pet Name:</label>
-    <input type="text" id="pet-name" name="pet-name" readonly>
+  
+  
+  <nav>
+
+    <div>
+      <a href="../index.html"><img src="../images/logo/logo-with-name.svg" alt="" class="small-img" draggable="false"></a>
+      
+      <div></div>
+
+      <ul class="rmv-bullets">
+        <li><a href="../adopt.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Adopt</a></li>
+        <li><a href="../donate.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Donate</a></li>
+        <li><a href="../volunteer.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">Volunteer</a></li>
+        <li><a href="../about-us.html" class="secondary-font rmv-link-design clr-yellow txt-24 nav-link">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  
+  <div class="form-container">
+    <a href="../adopt.html" class="rmv-link-design txt-24 reg-link"><span class="close-button">&times;</span></a>
+    <h1>Malou Pet Adoption Form</h1>
+
+
+    <form id="adoption-form" action="submit-adoption.php" method="post">
+
+      <!-- Pet Information -->
+      <fieldset>
+        <legend>Pet Information</legend>
+        <label for="pet-name">Pet Name:</label>
+        <input type="text" id="pet-name" name="pet-name" readonly required>
+
+        <label for="pet-type">Type:</label>
+        <input type="text" id="pet-type" name="pet-type" readonly>
+      </fieldset>
+
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Your Full Name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Your complete address" required></textarea>
+      </fieldset>
+
+      <!-- Household Information -->
+      <fieldset>
+        <legend>Household Information</legend>
+        <label for="household-type">Housing Type:</label>
+        <select id="household-type" name="household-type" required>
+          <option value="">--Select--</option>
+          <option value="Apartment">Apartment</option>
+          <option value="House">House</option>
+          <option value="Condo">Condo</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="pet-experience">Experience with Pets:</label>
+        <select id="pet-experience" name="pet-experience" required>
+          <option value="">--Select--</option>
+          <option value="First-time Owner">First-time Owner</option>
+          <option value="Experienced Owner">Experienced Owner</option>
+        </select>
+
+        <label for="existing-pets">Do you have other pets?</label>
+
+        <div class="radio-grp">
+          <input type="radio" id="existing-pets-yes" name="existing-pets" value="Yes" required>
+          <label for="existing-pets-yes">Yes</label>
+        </div>
+
+        <div class="radio-grp">
+          <input type="radio" id="existing-pets-no" name="existing-pets" value="No" required>
+          <label for="existing-pets-no">No</label>
+        </div>
+
+        <label for="pet-description">If yes, describe your current pets:</label>
+        <textarea id="pet-description" name="pet-description" rows="3" placeholder="Types, ages, personalities, etc."></textarea>
+      </fieldset>
+
+      <!-- Adoption Intent -->
+      <fieldset>
+        <legend>Adoption Intent</legend>
+        <label for="reason">Why do you want to adopt this pet?</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Please provide detailed reasons" required></textarea>
+
+        
+        <label for="commitment">Are you prepared for the lifelong commitment?</label>
+
+        <div class="radio-grp">
+          <input type="radio" id="commitment-yes" name="commitment" value="Yes" required>
+          <label for="commitment-yes">Yes</label>
+        </div>
+
+        <div class="radio-grp">
+          <input type="radio" id="commitment-no" name="commitment" value="No" required>
+          <label for="commitment-no">No</label>
+        </div>
+
+      </fieldset>
+
+      <!-- Submit Section -->
+      <button type="submit" class="btn primary-btn">Submit Application</button>
+    </form>
+
+
+  </div>
+
+
+  <!-- success modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <h2 class="secondary-font txt-32 clr-green">Application Submitted</h2>
+      <p class="body-font txt-16">Your adoption application has been successfully submitted.</p>
+      <button id="returnHomeButton" class="secondary-btn btn">Return to Home Page</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="light-yellow-bg">
     
-    <!-- Other fields like name, contact info, etc. -->
-    <label for="applicant-name">Your Name:</label>
-    <input type="text" id="applicant-name" name="applicant-name" required>
-    
-    <label for="contact-info">Contact Information:</label>
-    <input type="text" id="contact-info" name="contact-info" required>
-    
-    <button type="submit" onclick="redirectToThankYouPage('${pet.name}')">Submit Application</button>
-  </form>
+    <div class="upper green-bg">
+      <img src="../images/logo/logo.svg" alt="" draggable="false" class="small-img">
+
+      <ul class="rmv-bullets">
+        <li><a href="../adopt.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Adopt</a></li>
+        <li><a href="../donate.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Donate</a></li>
+        <li><a href="../volunteer.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">Volunteer</a></li>
+        <li><a href="../about-us.html" class="secondary-font rmv-link-design clr-yellow nav-link txt-24">About Us</a></li>
+      </ul>
+
+    </div>
+
+    <div class="credits">
+      <p class="secondary-font">Website by Jazmin Erika M. Nator</p>
+    </div>
+
+  </footer>
+
 
   <script>
-    // retrieve pet name from query parameter and display it
+    
     const params = new URLSearchParams(window.location.search);
     const petName = params.get("pet");
-    if (petName) {
-      document.getElementById("pet-name").value = petName;
-    }
+    const petType = params.get("type");
+    if (petName) document.getElementById("pet-name").value = petName;
+    if (petType) document.getElementById("pet-type").value = petType;
 
-    function redirectToThankYouPage(petName) { //recycled code to redirect to thank u page after submission
-      const url = `./forms/adoption-thank-you.html?pet=${encodeURIComponent(petName)}`;
-      window.location.href = url;
-    }
-
+    // Modal functionality
+    const form = document.getElementById("adoption-form");
+    const modal = document.getElementById("successModal");
+    const returnHomeButton = document.getElementById("returnHomeButton");
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      // Simulate form submission success
+      console.log("Form submitted for pet:", document.getElementById("pet-name").value);
+      modal.style.display = "block"; // Show the modal
+    });
+  
+    // Redirect to home page when "Return to Home Page" button is clicked
+    returnHomeButton.addEventListener("click", function () {
+      window.location.href = "../index.html"; // Update this path to your home page
+    });
   </script>
+  
 </body>
 </html>
