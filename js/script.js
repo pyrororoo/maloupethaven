@@ -16,7 +16,7 @@ fetch('./data/pets.json')
             <p class="body-font information"> <span class="information status">${pet.status}</span> <span class="information">${pet.age}</span> </p>
 
             <div class="btn-pane">
-              <a class="adopt-btn btn small-btn green-bg clr-yellow" onclick="redirectToForm('${pet.name}')" ${pet.status !== "Available" ? "disabled" : ""}>Adopt Me!</a>
+              <a class="adopt-btn btn small-btn green-bg clr-yellow" onclick="redirectToForm('${pet.name}', '${pet.type}')" ${pet.status !== "Available" ? "disabled" : ""}>Adopt Me!</a>
             </div>
           </div>
 
@@ -29,7 +29,8 @@ fetch('./data/pets.json')
   .catch((error) => console.error('Error loading pets:', error));
 
 
-  function redirectToForm(petName) {
-    const url = `./forms/adoption.html?pet=${encodeURIComponent(petName)}`;
+  function redirectToForm(petName, petType) {
+
+    const url = `./forms/adoption.html?pet=${encodeURIComponent(petName)}&type=${encodeURIComponent(petType)}`;
     window.location.href = url;
   }
