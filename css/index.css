@@ -151,6 +151,13 @@
 
   }
 
+
+  div.card:hover { 
+    transform: scale(1.03);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.881);
+    transition: all 0.03s ease-in;
+  }
+
   #pets-container::-webkit-scrollbar {
     height: 8px;
   }
