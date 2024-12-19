@@ -31,7 +31,7 @@ function displayPets(filteredPets) {
     if (pet.status === "Available") {
     petDiv.innerHTML = `
     <div class="card">
-      <img src="./images/pets/${pet.image}" alt="${pet.name}" class="card-img">
+      <img src="./images/pets/${pet.image}" alt="${pet.name}" class="card-img" draggable="false">
 
       <div class="content">
         <h3 class="txt-24 secondary-font clr-yellow green-bg">${pet.name}</h3>
