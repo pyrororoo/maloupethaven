@@ -46,16 +46,6 @@ function openForm(eventName) {
     document.getElementById("eventApplicationModal").style.display = "block";
 }
 
-// Close Modal Function
 function closeModal() {
   document.getElementById("eventApplicationModal").style.display = "none";
 }
-
-// Event Listeners
-document.getElementById("closeModal").addEventListener("click", closeModal);
-window.addEventListener("click", function (event) {
-  const modal = document.getElementById("eventApplicationModal");
-  if (event.target === modal) {
-    closeModal();
-  }
-});

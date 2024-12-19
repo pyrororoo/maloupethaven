@@ -7,7 +7,7 @@ const filterButton = document.getElementById("filter-button");
 
 let pets = [];
 
-fetch("../data/pets.json")
+fetch("./data/pets.json")
   .then(response => response.json())
   .then(data => {
     pets = data; //store fetched pets in a variable
