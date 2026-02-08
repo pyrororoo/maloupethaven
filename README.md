@@ -1,1 +1,1 @@
-half-assed school deliverable
+half-assed, last-minute school deliverable
